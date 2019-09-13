@@ -1,0 +1,11 @@
+how to put a specific record on top
+SQL> select id ,name from customers order by case when id  =4  then 0 else 1 end,id desc;
+
+        ID NAME
+---------- --------------------
+         4 Chaitali
+         6 Komal
+         5 Hardik
+         3 kaushik
+         2 Khilan
+         1 Ramesh
